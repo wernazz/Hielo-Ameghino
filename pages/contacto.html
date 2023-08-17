@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="shortcut icon" href="../img/hielo logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+    <header>
+        <img src="../img/hielo logo.png" alt="" class="logo" >
+        <h1 id="titulo">Hielo Ameghino</h1>
+      <h2>Pedir una cotización</h2>
+        <nav id="navegacion">
+            <ul class="menu">
+                <li class="menu_item"><a href="../index.html">Inicio</a></li>
+                <li class="menu_item"><a href="productos.html">Productos</a></li>
+                <li class="menu_item"><a href="ubicacion.html">¿Donde estamos?</a></li>
+                <li class="menu_item"><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+                <li class="menu_item active"><a href="contacto.html">Pedir Una Cotización</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contacto" >
+
+        <div>
+            <h4>Comunicate con nosotros</h4>
+            <form action="">
+                <div><label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" required>
+                </div>
+
+                <div><label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+
+                <div> <label for="number">Documento:</label>
+                    <input type="number" required>
+                </div>
+
+                <div><label for="mensaje">Deja tu mensaje...</label></div>
+                <textarea name="" id="mensaje" cols="30" rows="10"></textarea>
+                <div><label for="siono">acepta los <a href="./terminoscondiciones.html" target="_blank">terminos y
+                            condiciones?</a></label>
+                </div>
+                <label for="si">
+                    <input type="radio" name="siono" id="si" required> Sí
+                </label>
+                <label for="no">
+                    <input type="radio" name="siono" id="no"> No
+                </label>
+        </div>
+        <div><select name="" id="">
+                <option disabled selected>Seleccioná un distrito</option>
+                <option>Buenos Aires</option>
+                <option>Ciudad Autonoma de Buenos Aires</option>
+            </select></div>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpiar</button>
+        <button id="boton">Me siento con suerte</button>
+        </form>
+        <script>
+            document.getElementById("boton").addEventListener("click", function () {
+                // Open the target page in a new tab
+                window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "_blank");
+            });
+        </script>
+    </main>
+    <footer>
+        <ul class="menu">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="ubicacion.html">¿Donde estamos?</a></li>
+            <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+            <li><a href="contacto.html">Pedir Una Cotización</a></li>
+</footer>
+<img class="wpp" src="../img/WhatsApp.svg.png" alt="WhatsApp">
+</body>
+
+</html>
